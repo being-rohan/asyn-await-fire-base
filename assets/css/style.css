@@ -23,8 +23,8 @@
 
 .cardvisible {
   position: fixed;
-  top: 30%;
-  left: 30px;
+  top: 17%;
+  left: 0px;
   z-index: 999;
   animation: fade-slide-down 0.5s ease-in-out;
 }
