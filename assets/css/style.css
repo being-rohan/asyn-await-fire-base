@@ -156,3 +156,25 @@ div#card {
   font-weight: 500;
 
 }
+
+@media all and (max-width:1200px ){
+  .cl2{
+    color: white;
+    text-transform: capitalize;
+    font-size: medium;
+    font-weight: 300;
+   
+  
+  }
+}
+@media all and (min-width:768px){
+
+  .cl2{
+    color: white;
+    text-transform: capitalize;
+    font-size: medium;
+    font-weight: 300;
+   
+  
+  }
+}
