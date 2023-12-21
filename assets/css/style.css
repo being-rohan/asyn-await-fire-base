@@ -167,14 +167,3 @@ div#card {
   
   }
 }
-@media all and (min-width:768px){
-
-  .cl2{
-    color: white;
-    text-transform: capitalize;
-    font-size: medium;
-    font-weight: 300;
-   
-  
-  }
-}
