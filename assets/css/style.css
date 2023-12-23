@@ -149,11 +149,9 @@ div#card {
   align-items: center;
 }
 
-.cl ,.cl2{
+.cl,.cl2{
   color: white;
   text-transform: capitalize;
   font-size: large;
   font-weight: 500;
-
 }
-/*  */

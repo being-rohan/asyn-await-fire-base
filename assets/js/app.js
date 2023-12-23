@@ -81,10 +81,10 @@ const onEdit = (ele) => {
 
 
 }
-
 const onupdate = () => {
     cardvisible.classList.add('d-none')
     backdrop.classList.add('d-none')
+
 
     let updateid = localStorage.getItem('get');
     cl(updateid)
@@ -143,6 +143,7 @@ const oncreate = (ele) => {
     ele.preventDefault();
     cardvisible.classList.add('d-none')
     backdrop.classList.add('d-none')
+    updatebtn.classList.add('d-none')
     let newobj = {
         title: titlecontrol.value,
         body: bodycontrol.value,
@@ -182,8 +183,7 @@ const oncreate = (ele) => {
         })
         .finally(() => {
             postform.reset();
-            updatebtn.classList.remove('d-none');
-            addbtn.classList.add('d-none')
+         
         })
 
 }
@@ -240,11 +240,6 @@ const onDelete = (ele) => {
 
 }
 
-
-
-
-
-
 const objtoarr = (obj) => {
     let postarr = [];
     for (const key in obj) {
@@ -285,44 +280,10 @@ const templatingOfPosts = (arr) => {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const onaddposts = () => {
     cardvisible.classList.remove('d-none')
     backdrop.classList.toggle('d-none')
 }
-
 const oncancel = () => {
     cardvisible.classList.add('d-none');
     backdrop.classList.add('d-none');
@@ -339,18 +300,9 @@ const onbackdrop = () => {
 
 }
 
-
-
-
-
-
-
-
-
 // postform.addEventListener('submit', oncreate)
 addposts.addEventListener('click', onaddposts)
 cancel.addEventListener('click', oncancel)
 backdrop.addEventListener('click', onbackdrop)
 updatebtn.addEventListener('click', onupdate)
 postform.addEventListener('submit', oncreate)
-
